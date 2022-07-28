@@ -1,5 +1,5 @@
 function getManagerCard(Manager) {
-    const name = Manager.getName();
+  const name = Manager.getName();
   const id = Manager.getId();
   const email = Manager.getEmail();
   const officeNumber = Manager.officeNumber;
@@ -26,12 +26,12 @@ function getManagerCard(Manager) {
 }
 
 function getEngineerCard(Engineer) {
-    const name = Engineer.getName();
-    const id = Engineer.getId();
-    const email = Engineer.getEmail();
-    const github = Engineer.getGithub();
-  
-    return `
+  const name = Engineer.getName();
+  const id = Engineer.getId();
+  const email = Engineer.getEmail();
+  const github = Engineer.getGithub();
+
+  return `
               <div class="col-4 mt-4">
                   <div class="card h-100">
                       <div class="card-header bg-primary text-white">
@@ -50,16 +50,15 @@ function getEngineerCard(Engineer) {
                   </div>
               </div>
       `;
-  }
+}
 
+function getInternCard(Intern) {
+  const name = Intern.getName();
+  const id = Intern.getId();
+  const email = Intern.getEmail();
+  const school = Intern.getSchool();
 
-  function getInternCard(Intern) {
-    const name = Intern.getName();
-    const id = Intern.getId();
-    const email = Intern.getEmail();
-    const school = Intern.getSchool();
-  
-    return `
+  return `
               <div class="col-4 mt-4">
                   <div class="card h-100">
                       <div class="card-header bg-primary text-white">
@@ -78,28 +77,28 @@ function getEngineerCard(Engineer) {
                   </div>
               </div>
       `;
-  }
-  
-  function generateHtmlTemplate(teamProfileData) {
-    let cards = ``;
-    console.log(teamProfileData);
-    teamProfileData.forEach((employee) => {
-      console.log(employee.getRole(), employee.getName());
-  
-      switch (employee.getRole()) {
-        case "Manager":
-          cards += getManagerCard(employee);
-          break;
-        case "Engineer":
-          cards += getEngineerCard(employee);
-          break;
-        case "Intern":
-          cards += getInternCard(employee);
-          break;
-      }
-    });
+}
 
-    return `
+function generateHtmlTemplate(teamProfileData) {
+  let cards = ``;
+  console.log(teamProfileData);
+  teamProfileData.forEach((employee) => {
+    console.log(employee.getRole(), employee.getName());
+
+    switch (employee.getRole()) {
+      case "Manager":
+        cards += getManagerCard(employee);
+        break;
+      case "Engineer":
+        cards += getEngineerCard(employee);
+        break;
+      case "Intern":
+        cards += getInternCard(employee);
+        break;
+    }
+  });
+
+  return `
   <!DOCTYPE html>
   <html lang="en">
     <head>
@@ -148,5 +147,3 @@ function getEngineerCard(Engineer) {
 }
 
 module.exports = generateHtmlTemplate;
-
-  
