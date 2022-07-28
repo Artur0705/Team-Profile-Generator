@@ -1,0 +1,29 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "Node.js application to create team profile generator",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Artur0705/Team-Profile-Generator.git"
+  },
+  "keywords": [],
+  "author": "Artur Aleksanyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Artur0705/Team-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/Artur0705/Team-Profile-Generator#readme", 
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  } 
+}
