@@ -21,7 +21,8 @@
 
 
   ## Usage
-    - Run `node index.js` command and answer the prompted questions.
+  - Run `npm i` to install packages and then,
+  - Run `node index.js` command and answer the prompted questions.
 
   ## License
   This project is licensed under ![Github licence](http://img.shields.io/badge/license-MIT-blue.svg)
