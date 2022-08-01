@@ -13,6 +13,7 @@
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Demo](#demo)
+  * [Screenshot](#screenshot)
   * [Questions](#questions)
 
   ## Installation
@@ -35,8 +36,11 @@
 
   ## Demo
 
-  View walk through video here [Screencastify](https://drive.google.com/file/d/1JP62kVYQ5926pHx-kTjisueAIou3mYTa/view) <br>
-  <img src="assets\Screenshot.jpeg">
+  You can view walk through video by pressing [this link](https://drive.google.com/file/d/1JP62kVYQ5926pHx-kTjisueAIou3mYTa/view) .
+
+  ## Screenshot 
+
+  ![image](./assets/Screenshot.jpeg)
 
   ## Questions
   If you have any questions regarding the project you can contact me directly at artlil420@gmail.com.
